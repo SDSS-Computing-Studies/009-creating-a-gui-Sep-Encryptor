@@ -37,22 +37,3 @@ button3.place(x=550,y=175)
 
 entry1.place(x=10,y=150)
 entry2.place(x=130,y=150)
-entry3.place(x=250,y=150)
-entry4.place(x=370,y=150)
-entry5.place(x=500,y=150)
-
-label2.place(x=30 ,y=130 )
-label3.place(x=150 ,y=130 )
-label4.place(x=270 ,y= 130)
-label5.place(x= 390,y= 130)
-label6.place(x=520 ,y= 130)
-
-label8.place(x=30,y=15)
-
-label1.place(x=270,y=50)
-
-button7.place(x=290,y=12)
-
-entry6.place(x=420,y=15)
-
-window.mainloop()

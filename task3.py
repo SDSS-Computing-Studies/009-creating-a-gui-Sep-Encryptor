@@ -1,20 +1,17 @@
-#!python3
-
-import tkinter as tk 
+import tkinter as tk
 from tkinter import *
-from tkinter import ttk
+window=tk.Tk()
+window.geometry('260x140')
 
-window = tk.Tk()
-window.title("Task3")
-window.geometry("450x220")
+dogphoto = PhotoImage(file = 'dog.png')
+photo=tk.Label(window, image=dogphoto)
+poc=tk.Label(window, image=dogphoto)
 
-dogphoto = PhotoImage(file="dog.png")
-label1 = tk.Label(window, image=dogphoto)
-label2 = tk.Label(window,text = "pochacco!")
-label3 = tk.Label(window,text = "A cuddy little puppy! This is from the same creator who brought you keropi and kero kero", bg="#A3FFFF")
+poc=tk.Label(window, text='Pochacco!')
+label1=tk.Label(window,text='A cuddly little puppy! This is from the same /n creaters who brought you Keropi and Kero', bg = "#87ceeb")
 
-label1.grid(row = 1, column = 1)
-label2.grid(row = 1, column = 2)
-label3.grid(row = 2, column = 1,columnspan=2)
+photo.place(x=60,y=0)
+poc.place(x=130,y=40)
+label1.place(x=0,y=100)
 
 window.mainloop()

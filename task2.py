@@ -5,50 +5,56 @@ from tkinter import *
 from tkinter import ttk
 
 window = tk.Tk()
-window.title("Window")
+window.title("T-Town Veterinary Clinic Database")
 window.geometry("600x200")
 
+label1 = tk.Label(window,text="Client Database")
+label2 = tk.Label(window,text="Name")
+label3 = tk.Label(window,text="Type")
+label4 = tk.Label(window,text="Breed")
+label5 = tk.Label(window,text="Owner")
+label6 = tk.Label(window,text="Birthdate")
+
+
 dogphoto = PhotoImage(file="dog.png")
-label1 = tk.Label(window, image = dogphoto,borderwidth = 3, relief = SUNKEN)
-button1 = tk.Button(window,text = "Search by Name")
-entry1 = tk.Entry(window,width = 20)
-label2 = tk.Label(window,text = "Client Database")
-label3 = tk.Label(window,text = "Name")
-label4 = tk.Label(window,text = "Type")
-label5 = tk.Label(window,text = "Breed")
-label6 = tk.Label(window,text = "Owner")
-label7 = tk.Label(window,text = "Birthdate")
+label8 = tk.Label(window, image=dogphoto)
+
+button1 = tk.Button(window,text="<Previous")
+button2 = tk.Button(window,text="Save Entry")
+button3 = tk.Button(window,text="Next>")
+
+button7 = tk.Button(window,text="search by name",width=15)
+
+entry1 = tk.Entry(window,text="", width=15)
+entry2 = tk.Entry(window,text="", width=15)
+entry3 = tk.Entry(window,text="", width=15)
+entry4 = tk.Entry(window,text="", width=15)
+entry5 = tk.Entry(window,text="", width=15)
+entry6 = tk.Entry(window,text="", width=25)
 
 
-entry2 = tk.Entry(window,width = 20)
-entry3 = tk.Entry(window,width = 20)
-entry4 = tk.Entry(window,width = 20)
-entry5 = tk.Entry(window,width = 20)
-entry6 = tk.Entry(window,width = 20)
+button1.place(x=10,y=175)
+button2.place(x=270,y=175)
+button3.place(x=550,y=175)
 
+entry1.place(x=10,y=150)
+entry2.place(x=130,y=150)
+entry3.place(x=250,y=150)
+entry4.place(x=370,y=150)
+entry5.place(x=500,y=150)
 
-button2 = tk.Button(window,text = "<Previous")
-button3 = tk.Button(window,text = "Save Entry")
-button4 = tk.Button(window,text = "Next>")
+label2.place(x=30 ,y=130 )
+label3.place(x=150 ,y=130 )
+label4.place(x=270 ,y= 130)
+label5.place(x= 390,y= 130)
+label6.place(x=520 ,y= 130)
 
-label1.grid(row = 1, column = 1, rowspan = 2)
-button1.grid(row = 1,column = 4)
-entry1.grid(row = 1,column = 5)
-label2.grid(row = 2,column = 3)
-label3.grid(row = 3,column = 1)
-label4.grid(row = 3,column = 2)
-label5.grid(row = 3,column = 3)
-label6.grid(row = 3,column = 4)
-label7.grid(row = 3,column = 5)
+label8.place(x=30,y=15)
 
+label1.place(x=270,y=50)
 
-entry2.grid(row = 4,column = 1)
-entry3.grid(row = 4,column = 2)
-entry4.grid(row = 4,column = 3)
-entry5.grid(row = 4,column = 4)
-entry6.grid(row = 4,column = 5)
-button2.grid(row = 5,column = 1)
-button3.grid(row = 5,column = 3)
-button4.grid(row = 5,column = 5)
+button7.place(x=290,y=12)
+
+entry6.place(x=420,y=15)
 
 window.mainloop()
